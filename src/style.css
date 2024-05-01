@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(
+    circle at 0.2% 0.5%,
+    rgb(252, 165, 241) 0%,
+    rgb(181, 255, 255) 100.2%
+  );
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.keys {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.keys > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.key1 {
+  background: #8ef6e4;
+}
+
+.key2 {
+  background: #9896f1;
+}
+
+.key3 {
+  background: #d59bf6;
+}
+
+.key4 {
+  background: #edb1f1;
+}
+
+.key5 {
+  background: #a8e6cf;
+}
+
+.key6 {
+  background: #fdffab;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 50%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}

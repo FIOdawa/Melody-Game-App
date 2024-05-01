@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   const sounds = document.querySelectorAll(".sound");
-  const pads = document.querySelectorAll(".keys div");
+  const keys = document.querySelectorAll(".keys div");
   const visual = document.querySelector(".visual");
   const colors = [
     "#8ef6e4",
